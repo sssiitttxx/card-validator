@@ -1,0 +1,56 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+/* ряд иконок */
+.cards {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+/* неактивная иконка: серая и бледная */
+.card-icon {
+  width: 48px;
+  opacity: 0.3;
+  filter: grayscale(1);
+  transition: opacity 0.2s, filter 0.2s;
+}
+
+/* активная иконка: обычная, цветная */
+.card-icon.active {
+  opacity: 1;
+  filter: none;
+}
+
+/* поле и кнопка в одну строку */
+.validator-form {
+  display: flex;
+  gap: 10px;
+}
+
+.card-input {
+  width: 220px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.validator-form button {
+  padding: 10px 16px;
+  font-size: 16px;
+  color: #fff;
+  background: #5cb85c;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 12px;
+  font-size: 18px;
+}
