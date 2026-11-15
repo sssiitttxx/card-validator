@@ -25,7 +25,7 @@ export default class CardWidget {
     }
 
     render() {
-      const icons = CARDS.map((card) => `<img class='card-icon' src='${card.src}' alt='{card.name}' data-name='${card.name}'>`).join('');
+      const icons = CARDS.map((card) => `<img class='card-icon' src='${card.src}' alt='${card.name}' data-name='${card.name}'>`).join('');
       this.container.innerHTML = `      <div class="cards">${icons}</div>
       <form class="validator-form">
         <input class="card-input" type="text" placeholder="Номер карты">
